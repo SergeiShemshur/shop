@@ -35,7 +35,7 @@
                 <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 ">
                     <a href="/category/${category.id}">
                     <div class="thumbnail shadow">
-                        <img src="http://www.slideteam.net/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/p/r/product_word_with_target_dart_and_arrow_showing_business_and_marketing_target_stock_photo_Slide01.jpg" class="img-rounded">
+                        <img src="${category.imageUrl}" class="img-rounded">
                         <div class="text-center"><c:out value="${category.title}"/></div>
                     </a>
                     </div>

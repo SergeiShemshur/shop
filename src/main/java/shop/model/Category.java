@@ -3,6 +3,15 @@ package shop.model;
 public class Category {
     private int id;
     private String title;
+    private String imageUrl;
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
 
     public int getId() {
         return id;
