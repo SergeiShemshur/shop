@@ -1,0 +1,78 @@
+CREATE TABLE category
+(
+    id INT(11) PRIMARY KEY NOT NULL,
+    title VARCHAR(45)
+);
+CREATE TABLE `order`
+(
+    id INT(11) PRIMARY KEY NOT NULL,
+    purchase_time TIMESTAMP NOT NULL,
+    userId INT(11),
+    CONSTRAINT order_ibfk_1 FOREIGN KEY (userId) REFERENCES user (id)
+);
+
+CREATE TABLE product
+(
+    id INT(11) PRIMARY KEY NOT NULL,
+    model VARCHAR(45),
+    price DOUBLE,
+    category_id INT(11),
+    CONSTRAINT product_category_id_fk FOREIGN KEY (category_id) REFERENCES category (id)
+);
+
+CREATE TABLE order_product
+(
+    order_id INT(11) NOT NULL,
+    product_id INT(11) NOT NULL,
+    amount INT(11) NOT NULL,
+    id INT(11) NOT NULL
+);
+
+
+
+CREATE TABLE user
+(
+    id INT(11) PRIMARY KEY NOT NULL,
+    name VARCHAR(45) NOT NULL
+);
+
+
+///// new
+
+CREATE TABLE category
+(
+    id INT(11) PRIMARY KEY NOT NULL,
+    title VARCHAR(45)
+);
+CREATE TABLE `order`
+(
+    id INT(11) PRIMARY KEY NOT NULL,
+    purchase_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    userId INT(11)
+);
+CREATE TABLE order_product
+(
+    order_id INT(11) NOT NULL,
+    product_id INT(11) NOT NULL,
+    amount INT(11) NOT NULL,
+    id INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT
+);
+CREATE TABLE product
+(
+    id INT(11) PRIMARY KEY NOT NULL,
+    model VARCHAR(45),
+    price DOUBLE,
+    category_id INT(11)
+);
+CREATE TABLE user
+(
+    id INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    name VARCHAR(45) NOT NULL,
+    phone INT(11)
+);
+CREATE TABLE orders
+(
+    id INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    user_id INT(11),
+    status VARCHAR(256)
+);
