@@ -1,0 +1,12 @@
+INSERT INTO shop.product (id, model, price, category_id, imageUrl) VALUES (1, 'Naturally Red Rose                           ', 44, 1, 'http://teleflora.edgesuite.net/images/products/HW0_372687.jpg');
+INSERT INTO shop.product (id, model, price, category_id, imageUrl) VALUES (2, 'Teleflora''s True Romance ', 74, 1, 'http://teleflora.edgesuite.net/images/products/HW0_372912.jpg');
+INSERT INTO shop.product (id, model, price, category_id, imageUrl) VALUES (3, 'Bouquet with Red Roses ', 84, 1, 'http://teleflora.edgesuite.net/images/products/HW0_372762.jpg');
+INSERT INTO shop.product (id, model, price, category_id, imageUrl) VALUES (4, 'Victorian Romance', 22, 1, 'http://teleflora.edgesuite.net/images/products/HW0_372760.jpg');
+INSERT INTO shop.product (id, model, price, category_id, imageUrl) VALUES (5, 'That''s Really Cool', 71, 2, 'http://teleflora.edgesuite.net/images/products/HW0_683711.jpg');
+INSERT INTO shop.product (id, model, price, category_id, imageUrl) VALUES (6, 'Teleflora''s Island Dreams', 11, 2, 'http://teleflora.edgesuite.net/images/products/HW0_372741.jpg');
+INSERT INTO shop.product (id, model, price, category_id, imageUrl) VALUES (7, 'Blue Hydrangea', 111, 3, 'http://teleflora.edgesuite.net/images/products/HW0_34702.jpg');
+INSERT INTO shop.product (id, model, price, category_id, imageUrl) VALUES (8, 'Pink Hydrangea Plant', 33, 3, 'http://teleflora.edgesuite.net/images/products/HW0_207644.jpg');
+INSERT INTO shop.product (id, model, price, category_id, imageUrl) VALUES (9, 'Spring Has Sprung', 43, 3, 'http://teleflora.edgesuite.net/images/products/HW0_372624.jpg');
+INSERT INTO shop.product (id, model, price, category_id, imageUrl) VALUES (10, 'Soft Royalty', 33, 4, 'http://teleflora.edgesuite.net/images/products/HW0_683681.jpg');
+INSERT INTO shop.product (id, model, price, category_id, imageUrl) VALUES (11, 'Wondrous Wishes by Teleflora', 99, 4, 'http://teleflora.edgesuite.net/images/products/HW0_372689.jpg');
+INSERT INTO shop.product (id, model, price, category_id, imageUrl) VALUES (12, 'Teleflora''s Lush and Lovely', 23, 4, 'http://teleflora.edgesuite.net/images/products/HW0_372722.jpg');

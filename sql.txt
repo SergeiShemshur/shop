@@ -1,7 +1,8 @@
 CREATE TABLE category
 (
     id INT(11) PRIMARY KEY NOT NULL,
-    title VARCHAR(45)
+    title VARCHAR(45),
+    ImageUrl VARCHAR(256)
 );
 CREATE TABLE `order`
 (
@@ -26,6 +27,7 @@ CREATE TABLE product
     model VARCHAR(45),
     price DOUBLE,
     category_id INT(11),
+    imageUrl VARCHAR(256),
     CONSTRAINT product_category_id_fk FOREIGN KEY (category_id) REFERENCES category (id)
 );
 CREATE INDEX product_category_id_fk ON product (category_id);
