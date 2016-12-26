@@ -8,8 +8,15 @@ public class Product {
     private int category;
     private String modelName;
     private BigDecimal price;
+    private String imageUrl;
 
+    public String getImageUrl() {
+        return imageUrl;
+    }
 
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
 
     public Product(int category, String modelName, BigDecimal price) {
         this.category = category;

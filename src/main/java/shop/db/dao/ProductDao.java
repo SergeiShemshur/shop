@@ -61,6 +61,7 @@ public class ProductDao extends AbstractDao<Product> {
         product.setCategory(resultSet.getInt("category_id"));
         product.setModelName(resultSet.getString("model"));
         product.setPrice(new BigDecimal(resultSet.getDouble("price")));
+        product.setImageUrl(resultSet.getString("imageUrl"));
         return product;
     }
 }

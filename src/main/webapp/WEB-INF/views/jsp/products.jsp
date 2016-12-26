@@ -36,7 +36,7 @@
         <c:forEach items="${products}" var="product">
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 ">
                 <div class="thumbnail shadow" style="background-image: url(http://cdn.fabulousblogging.com/wp-content/uploads/2012/10/neutral.png?bcbabf)">
-                    <img src="http://www.privaledge.net/pricing-strategy/wp-content/uploads/2013/09/13986273-new-product.jpg" class="img-thumbnail">
+                    <img src="${product.imageUrl}" class="img-thumbnail">
                     <h1 class="text-center"> ${product.modelName}</h1>
                     <p >
                     <form class="text-center" style="display: inline;" method="get" action="/addProductToShoppingCart/">
